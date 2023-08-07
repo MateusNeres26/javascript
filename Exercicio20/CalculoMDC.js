@@ -1,6 +1,6 @@
 //Calcule o MDC (máximo divisor comum) entre dois números.
 
-function calcularMDC(a, b) {
+const calcularMDC = (a, b) => {
 
   a = Math.abs(Math.floor(a));
   b = Math.abs(Math.floor(b));
@@ -18,3 +18,5 @@ const numero1 = 72;
 const numero2 = 108;
 const mdc = calcularMDC(numero1, numero2);
 console.log("MDC entre", numero1, "e", numero2, "é:", mdc);
+
+module.exports = { calcularMDC }
